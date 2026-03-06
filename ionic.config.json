@@ -1,0 +1,7 @@
+{
+  "name": "hooperStats-frontend-V2",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
