@@ -1,3 +1,55 @@
-<p>
-  workouts works!
-</p>
+<app-side-menu></app-side-menu>
+<div class="ion-page" id="workouts-page">
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title slot="start">
+        Treinos
+      </ion-title>
+
+      <ion-buttons slot="end">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content [fullscreen]="true">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-card class="secondary-card" button>
+            <ion-card-header>
+              <ion-card-title class="card-title-2">
+                Treinos Concluídos
+              </ion-card-title>
+              <!-- <ion-card-subtitle>
+                verifique os treinos ja concluídos
+              </ion-card-subtitle> -->
+            </ion-card-header>
+            <ion-card-content>
+              <ion-icon name="barbell" size="large"></ion-icon>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size="6">
+          <ion-card class="secondary-card" button routerLink="/treinos">
+              <ion-card-header>
+                <ion-card-title class="card-title-2">
+                  Novo Treino
+                </ion-card-title>
+                <!-- <ion-card-subtitle>
+                  Registre um novo treino aqui
+                </ion-card-subtitle> -->
+              </ion-card-header>
+              <ion-card-content>
+                <ion-icon name="add" size="large"></ion-icon>
+              </ion-card-content>
+            </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+</div>

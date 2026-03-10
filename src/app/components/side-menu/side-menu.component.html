@@ -1,4 +1,4 @@
-<ion-menu contentId="home-page">
+<ion-menu contentId="main-content">
   <ion-header>
     <ion-toolbar>
       <ion-title>Opções</ion-title>
@@ -6,31 +6,31 @@
   </ion-header>
   <ion-content>
     <ion-list lines="full" id="side-menu-list">
-      <ion-item>
+      <ion-item button routerLink="/home" routerDirection="root">
         <ion-label>
           <ion-icon size="large" name="home"></ion-icon>
           <h1>Home</h1>
         </ion-label>
       </ion-item>
-      <ion-item>
+      <ion-item button routerLink="/perfil" routerDirection="forward">
         <ion-label>
           <ion-icon size="large" name="person"></ion-icon>
           <h1>Perfil</h1>
         </ion-label>
       </ion-item>
-      <ion-item>
+      <ion-item button routerLink="/treinos" routerDirection="forward">
         <ion-label>
           <ion-icon size="large" name="barbell"></ion-icon>
           <h1>Treinos</h1>
         </ion-label>
       </ion-item>
-      <ion-item>
+      <ion-item button routerLink="/metas" routerDirection="forward">
         <ion-label>
           <ion-icon size="large" name="receipt"></ion-icon>
           <h1>Metas</h1>
         </ion-label>
       </ion-item>
-      <ion-item>
+      <ion-item button routerLink="/prime" routerDirection="forward">
         <ion-label color="warning">
           <ion-icon size="large" name="sparkles"></ion-icon>
           <h1>Prime</h1>
