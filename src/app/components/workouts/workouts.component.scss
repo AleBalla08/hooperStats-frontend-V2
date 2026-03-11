@@ -3,6 +3,43 @@
 }
 
 .secondary-card {
-    margin: 5px;
-    height: 150px;
+    
+    max-height: 200px;
+    height: 85%;
+}
+
+.ion-grid-personalized ion-col {
+    padding: 0;
+}
+
+.halfcourt-card{
+    margin-bottom: 5px;
+}
+
+.color_subtitle{
+    display: flex;
+    flex-direction: row;
+    max-height: 30px;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.graph-card {
+    margin-top: 5px;
+
+    ion-card-header {
+        ion-card-title {
+            font-size: 24px;
+        }
+
+        ion-card-subtitle {
+            font-size: 12px;
+        }
+    }
+
 }

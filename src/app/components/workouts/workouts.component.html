@@ -12,7 +12,7 @@
     </ion-toolbar>
   </ion-header>
   <ion-content [fullscreen]="true">
-    <ion-grid>
+    <ion-grid class="ion-grid-personalized">
       <ion-row>
         <ion-col size="6">
           <ion-card class="secondary-card" button>
@@ -31,23 +31,65 @@
         </ion-col>
         <ion-col size="6">
           <ion-card class="secondary-card" button routerLink="/treinos">
+            <ion-card-header>
+              <ion-card-title class="card-title-2">
+                Adicionar Treino
+              </ion-card-title>
+              <!-- <ion-card-subtitle>
+                Registre um novo treino aqui
+              </ion-card-subtitle> -->
+            </ion-card-header>
+            <ion-card-content>
+              <ion-icon name="add" size="large"></ion-icon>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-card class="secondary-card">
               <ion-card-header>
-                <ion-card-title class="card-title-2">
-                  Novo Treino
+                <ion-card-title>
+                  Última Sessão
                 </ion-card-title>
-                <!-- <ion-card-subtitle>
-                  Registre um novo treino aqui
-                </ion-card-subtitle> -->
+                <ion-card-subtitle>
+                  Sua ùltima sessão de treinamento concluída
+                </ion-card-subtitle>
               </ion-card-header>
               <ion-card-content>
-                <ion-icon name="add" size="large"></ion-icon>
+                <h1>Treino C - 25/02/2026</h1>
               </ion-card-content>
             </ion-card>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col>
-
+          <ion-card class="halfcourt-card">
+              <img src="assets/images/halfcourt.png" alt="Gráfico halfcourt">
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-card class="color_subtitle">
+            <p style='color: #A31D1D'>+60%</p>
+            <p style='color: #FFB433'>+50%</p>
+            <p style='color: #578FCA'>+40%</p>
+            <p style='color: #8C8C8C'>-40%</p>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+       <ion-row>
+        <ion-col>
+          <ion-card class="graph-card">
+            <ion-card-header>
+              <ion-card-title>
+                Repetições por Exercício
+              </ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+            </ion-card-content>
+          </ion-card>
         </ion-col>
       </ion-row>
     </ion-grid>
