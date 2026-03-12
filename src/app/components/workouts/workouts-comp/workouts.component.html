@@ -30,10 +30,10 @@
           </ion-card>
         </ion-col>
         <ion-col size="6">
-          <ion-card class="secondary-card" button routerLink="/treinos">
+          <ion-card class="secondary-card" button routerLink="/treinos/gerenciar">
             <ion-card-header>
               <ion-card-title class="card-title-2">
-                Adicionar Treino
+                Gerenciar Treinos
               </ion-card-title>
               <!-- <ion-card-subtitle>
                 Registre um novo treino aqui
@@ -64,6 +64,36 @@
       </ion-row>
       <ion-row>
         <ion-col>
+          <ion-card class="secondary-card">
+              <ion-card-header>
+                <ion-card-title>
+                  Próxima Sessão
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Sua próxima sessão de treinamento
+                </ion-card-subtitle>
+              </ion-card-header>
+              <ion-card-content>
+                <h1>Treino D</h1>
+              </ion-card-content>
+            </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-card class="secondary-card">
+              <ion-card-header>
+                <ion-card-title>
+                  Relatório de Estatísticas
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Suas estatísticas de aproveitamento 
+                </ion-card-subtitle>
+              </ion-card-header>
+              <ion-card-content>
+                <!-- Isso vai dentro da tela de estaticticas -->
+                  <!-- <ion-row>
+        <ion-col>
           <ion-card class="halfcourt-card">
               <img src="assets/images/halfcourt.png" alt="Gráfico halfcourt">
           </ion-card>
@@ -88,8 +118,20 @@
               </ion-card-title>
             </ion-card-header>
             <ion-card-content>
+              <google-chart
+                [type]="type"
+                [data]="data"
+                [columns]="columnNames"
+                [options]="options"
+                [width]="width"
+                [height]="height">
+              </google-chart>
             </ion-card-content>
           </ion-card>
+        </ion-col>
+      </ion-row> -->
+              </ion-card-content>
+            </ion-card>
         </ion-col>
       </ion-row>
     </ion-grid>

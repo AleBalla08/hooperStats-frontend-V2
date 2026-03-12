@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { WorkoutsComponent } from './components/workouts/workouts.component';
+import { WorkoutsComponent } from './components/workouts/workouts-comp/workouts.component';
 
 export const routes: Routes = [
   {
@@ -9,8 +9,14 @@ export const routes: Routes = [
   {
     path: 'treinos',
     loadComponent: () =>
-      import('./components/workouts/workouts.component')
+      import('./components/workouts/workouts-comp/workouts.component')
         .then((m) => m.WorkoutsComponent),
+  },
+  {
+    path: 'treinos/gerenciar',
+    loadComponent: () =>
+      import('./components/workouts/manage-workouts/manage-workouts.component')
+        .then((m) => m.ManageWorkoutsComponent),
   },
   {
     path: '',
